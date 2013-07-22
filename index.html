@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link type="text/css" rel="stylesheet"
        href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-combined.no-icons.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/3.0.2/css/font-awesome.css">
+    <link rel="stylesheet" href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fsocial-buttons.css">
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fjquery.js"></script>
     <script src="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap.js"></script>
     <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
-
     <style type="text/css">
+
       /* Large desktop */
       @media (min-width: 980px) {
         body {
@@ -75,9 +77,30 @@
       .statistics h3, .statistics p {
         color: white;
       }
+
+      /* Marketing copy and footer */
+      .copy {
+        padding-top: 2.5%;
+        padding-bottom: 2.5%;
+        text-align: justify;
+      }
+      .asset {
+        padding: 2.5%;
+      }
+      .footer {
+        color: #cccccc;
+        text-align: center;
+      }
+      .footer p {
+        font-size: 11px;
+      }
+      .footer a {
+        color: #ccccff;
+      }
     </style>
   </head>
   <body>
+
     <!-- Mobile-friendly navbar adapted from example. -->
     <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -149,24 +172,74 @@
              </div>
           </div>
        </div>
-     <div class="row section1">
-      <div class="span12">
-	Marketing Section 1
-      </div>
-     </div>
-     <div class="row section2">
-       <div class="span12">
-         Marketing Section 2
+       <div class="span10 offset1">
+         <!-- Bootstrap progress bar -->
+         <!-- http://twitter.github.io/bootstrap/components.html#progress -->
+         <div class="thermometer progress active">
+           <div class="bar bar-success" style="width: 60%;"></div>
+           <div class="bar bar-warning" style="width: 40%;"></div>
+         </div>
+       </div>
+       <div class="span6 offset3 order">
+         <!-- Standard Bootstrap button. -->
+         <!-- http://twitter.github.io/bootstrap/base-css.html#buttons -->
+         <button class="btn btn-success btn-large">Preorder</button>
+       </div>
+       <div class="span8 offset2 social">
+         <!-- Social buttons are not included in default Bootstrap. -->
+         <!-- See: http://noizwaves.github.io/bootstrap=social-buttons -->
+         <button class="btn btn-twitter"><i class="icon-twitter"></i> | Twitter</button>
+         <button class="btn btn-facebook"><i class="icon-facebook"></i> | Facebook</button>
        </div>
      </div>
-     <div class="row faq">
-       <div class="span12">
-         FAQ
-       </div>
+   </div>
+
+   <!-- Beyond this part the marketing copy begins. -->
+   <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/text-align -->
+   <!-- http://twitter.github.io/bootstrap/base-css.html#images -->
+   <!-- http://placehold.it -->
+   <div class="row-fluid section1">
+     <div class="span5 offset1 asset">
+       <img class="img-polaroid" src="http://placehold.it/480x300">
      </div>
-     <div class="row footer">
-       <div class="span12">
-         Footer
+     <div class="span5 copy">
+       <p>
+         Marketing section 1
+
+
+
+
+
+
+
+
+
+
+       </p>
+     </div>
+   </div>
+
+   <div class="row-fluid section2">
+     <div class="span5 offset1 copy copy-right">
+       <p>
+         Marketing section 2
+
+
+
+
+
+
+
+
+
+
+       </p>
+     </div>
+   <div class="span5 asset">
+     <img class="img-polaroid" src="http://placehold.it/480x300">
+   </div>
+ </div>
+
        </div>
      </div>
    </div>
